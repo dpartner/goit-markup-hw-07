@@ -11,7 +11,11 @@
   background-size: 1600px;
 }
 
-.hero .title {
+.hero__container {
+  @include container();
+}
+
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -21,4 +25,9 @@
   color: var(--alternative-text-color);
   margin: 0 auto 30px auto;
   width: 696px;
+}
+
+.hero__button {
+  @extend %button;
+  @extend %button--primary;
 }
